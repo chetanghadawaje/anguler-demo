@@ -1,0 +1,17 @@
+<section class="add-product">
+
+    <form class="form-product" [formGroup]=productForm>
+        <h1>Create Product</h1>
+        <input class="imp" type="text" placeholder="Enter Name" [formControl]=name>
+        <!-- @if (error_messgae.name_valid.length != 0) {
+            @for (error of error_messgae.name_valid; track $index) {
+                <p>{{error}}</p>
+            }
+        } -->
+        <input class="imp" type="number" placeholder="Enter Price" [formControl]=price>
+        <input class="imp" type="text" placeholder="Enter Image URL" [formControl]=imageUrl>
+        <input class="imp" type="text" placeholder="Enter Category" [formControl]=category>
+        <button class="btn" (click)=createProduct()>Create New Product</button>
+    </form>
+
+</section>

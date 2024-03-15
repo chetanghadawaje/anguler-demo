@@ -1,0 +1,23 @@
+.product-image{
+    /* height:170px; */
+    width:100%;
+    max-width:500px;
+}
+
+.rating-count{
+    display:inline;
+    word-wrap: break-word;
+}
+
+.desc{
+    height: 15%;
+    overflow: hidden;
+}
+
+.title{
+    height: 30%;
+}
+
+.price{
+    height: 5%;
+}

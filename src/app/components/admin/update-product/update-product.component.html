@@ -1,0 +1,13 @@
+<section class="add-product">
+
+    <form class="form-product" [formGroup]=productForm>
+        <h1>Update Product</h1>
+        <input class="imp" type="text" placeholder="Enter Name" [formControl]=name>
+        <p [hidden]="name.errors?.['requried']">Name is not empty</p>
+        <input class="imp" type="number" placeholder="Enter Price" [formControl]=price>
+        <input class="imp" type="text" placeholder="Enter Image URL" [formControl]=imageUrl>
+        <input class="imp" type="text" placeholder="Enter Category" [formControl]=category>
+        <button class="btn" (click)=updateProduct() [disabled]="!productForm.valid">Update Product</button>
+    </form>
+
+</section>

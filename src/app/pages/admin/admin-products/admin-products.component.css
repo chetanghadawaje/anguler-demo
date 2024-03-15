@@ -1,0 +1,77 @@
+.admin-container{
+    background-color: lightgrey;
+    width: 100%;
+    padding: 30px 70px;
+    min-height: 100vh;
+}
+
+.title{
+    font-weight: 200;
+}
+
+.prodcut-image{
+    height: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.prodcut-image:hover{
+    transform: scale(4);
+    border: 1px solid;
+}
+
+.prodcts-item{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.prodct{
+    width: 30%;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 15px 5px;
+}
+
+.action{
+    display: flex;
+    column-gap: 10px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.view{
+    color: skyblue;
+}
+
+.delete{
+    color: red;
+}
+
+.update{
+    color: green;
+}
+
+i{
+    cursor: pointer;
+    transition: .1s;
+}
+
+i:hover{
+    transform: scale(1.2);
+}
+
+.add-product{
+    float: right;
+}

@@ -1,0 +1,13 @@
+<section class="products">
+    <div>
+        <samp class="title"> All Products </samp>
+        <input class="serch-box" type="text" (keyup)=serachProduct($event) placeholder="Serach Product">
+    </div>
+
+    <div class="product-list">
+        @for (product_item of product_list; track $index) {
+            <app-product class="product-item" [product]=product_item></app-product>
+        }
+    </div>
+    
+</section>
